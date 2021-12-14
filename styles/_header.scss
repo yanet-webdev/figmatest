@@ -1,0 +1,91 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-image: linear-gradient(blue,rgb(130, 161, 186));
+    .logo img{
+        height: 40px;
+        margin: 0 60px;
+    }
+    .nav-bars{
+        font-size: 20px;
+        color: white;
+        display: none;
+        @include media("<tablet"){
+            display: block;
+
+        }
+        
+    }
+    nav a{
+        margin-left: 20px;
+        color: white;
+        text-decoration: none;
+        @include media("<tablet"){
+            display: none;
+
+        }
+        
+        i{
+            margin-right: 10px;
+            
+            display: inline-block;
+            position: relative;
+            font-size: 30px;
+            
+            &::after{
+                content: 'NEW';
+                display: inline-block;
+                position: absolute;
+                font-size: 8px;
+                color: black;
+                top:38%;
+                left:20%;
+            }
+        }
+        .lorem-1{
+            color:rgb(13, 255, 0);
+        }
+        .lorem-2{
+            color:rgb(208, 19, 218);
+        }
+        .lorem-3{
+            color:rgb(251, 255, 0);
+        }
+        .lorem-4{
+            color:rgb(221, 149, 24);
+        }
+        .lorem-5{
+            color:rgb(0, 229, 255);
+        }
+        
+    }
+    .btn-info {
+        margin-right: 50px;
+        button{
+            border:none;
+            color: white;
+            background-color: transparent;
+            
+        }
+        .active{
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        @include media("<desktop"){
+            display: none;
+
+        }
+    }
+    .search-icon{
+        font-size: 20px;
+        color: white;
+        display: none;
+        @include media("<desktop"){
+            display: block;
+
+        }
+    }
+}

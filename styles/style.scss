@@ -1,0 +1,20 @@
+ @import "media-queries.scss";
+ 
+ *{
+     box-sizing: border-box;
+ }
+ body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "./header";
+
+@import "./pageError";
+    
+@import "./cardBrands";
+
+
+
+

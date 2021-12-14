@@ -1,0 +1,144 @@
+.card-brands{
+    margin-top: 250px;
+    background-image: url(/Images/wallpaper404.png);
+    height: 700px;
+    width: 100vw;
+    overflow-x: scroll;
+   
+    h1{
+        text-align: center;
+        font-size: 33px;
+        font-size: 700;
+        padding-top: 20px;
+        a{
+            text-decoration: none;
+            color: rgb(40, 106, 164);
+        }
+        @include media("<tablet"){
+            font-size: 20px;
+        }
+    }
+    .content-cards{
+        display: block;
+        white-space: nowrap;
+        
+        .card{
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+            background-color: white;
+            border-radius: 10px;
+            
+            .nav-init{
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 0px 5px;
+             p{
+                 font-weight: lighter;
+                 padding-right: 60px;
+                 font-size: 10px;
+             }
+             
+            }
+            .bck-color-1{
+                padding: 10px 0px;
+                background-color: rgb(59, 79, 130);
+                img{
+                    height: 40px;
+               }
+             }
+             .bck-color-2{
+                padding: 10px 0px;
+                background-color: rgb(162, 101, 48);
+                img{
+                    height: 40px;
+               }
+             }
+             .bck-color-3{
+                padding: 10px 0px;
+                background-color: rgb(20, 87, 50);
+                img{
+                    height: 40px;
+               }
+             }
+             .bck-color-4{
+                padding: 10px 0px;
+                background-color: rgb(195, 203, 199);
+                img{
+                    height: 40px;
+               }
+             }
+             .bck-color-5{
+                padding: 10px 0px;
+                background-color: rgb(131, 56, 131);
+                img{
+                    height: 40px;
+               }
+             }
+             
+            .dummy-text{
+             h6{
+                 text-transform: uppercase;
+                 font-weight: lighter;
+                 letter-spacing: 1px;
+             }
+             h4{
+                 text-transform: uppercase;
+                 font-weight: bold;
+             }
+             h5{
+                 font-weight: 100;
+                 font-size: 16px;
+                 a{
+                     text-decoration: none;
+                     color: rgb(40, 106, 164);
+                     font-weight: bold;
+                 }
+             }
+             p{
+                 font-weight: 100;
+                 font-size: 10px;
+                 margin-top: -20px;
+             }
+            }
+          button{
+              text-transform: uppercase;
+              color: white;
+              border-radius: 20px;
+              background-color: rgb(76, 151, 216);
+              border: 1px solid rgb(0, 136, 255);
+              padding: 5px 40px;
+              font-size: 10px;
+              margin-bottom: 10px;
+          }
+          
+            
+        }
+    }
+   .all-brands{
+    font-size: 33px;
+    margin-top: 140px;
+    margin-left: 700px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(26, 224, 238) , rgb(0, 136, 255));
+    border-image-source: linear-gradient(to right, rgb(26, 224, 238) , rgb(0, 136, 255));
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 5px 40px;
+    @include media("<desktop"){
+        margin-left: 500px;
+
+    }
+    @include media("<desktop"){
+        margin-left: 150px;
+    }
+   }
+   .border-gradient{
+       
+       border-image-slice: 1; 
+   }
+}
