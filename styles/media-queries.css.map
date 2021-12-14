@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AA0UA;;;;GAIG",
-    "sources": [
-        "media-queries.scss"
-    ],
-    "names": [],
-    "file": "media-queries.css"
-}
+{"version":3,"sources":["media-queries.scss"],"names":[],"mappings":"AA2UA;;;;EAAA","file":"media-queries.css"}

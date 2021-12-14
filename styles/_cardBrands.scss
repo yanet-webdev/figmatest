@@ -1,9 +1,11 @@
+
 .card-brands{
     margin-top: 250px;
     background-image: url(/Images/wallpaper404.png);
     height: 700px;
-    width: 100vw;
+    // width: 100vw;
     overflow-x: scroll;
+   
    
     h1{
         text-align: center;
@@ -19,8 +21,10 @@
         }
     }
     .content-cards{
-        display: block;
-        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         
         .card{
             display: inline-block;

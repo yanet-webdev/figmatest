@@ -4,69 +4,54 @@
 *
 **/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 30px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#82a1ba));
   background-image: linear-gradient(blue, #82a1ba);
 }
-
 header .logo img {
   height: 40px;
   margin: 0 60px;
 }
-
 header .nav-bars {
   font-size: 20px;
   color: white;
   display: none;
 }
-
 @media (max-width: 972px) {
   header .nav-bars {
     display: block;
   }
 }
-
 header nav a {
   margin-left: 20px;
   color: white;
   text-decoration: none;
 }
-
 @media (max-width: 972px) {
   header nav a {
     display: none;
   }
 }
-
 header nav a i {
   margin-right: 10px;
   display: inline-block;
   position: relative;
   font-size: 30px;
 }
-
 header nav a i::after {
-  content: 'NEW';
+  content: "NEW";
   display: inline-block;
   position: absolute;
   font-size: 8px;
@@ -74,55 +59,44 @@ header nav a i::after {
   top: 38%;
   left: 20%;
 }
-
 header nav a .lorem-1 {
   color: #0dff00;
 }
-
 header nav a .lorem-2 {
   color: #d013da;
 }
-
 header nav a .lorem-3 {
   color: #fbff00;
 }
-
 header nav a .lorem-4 {
   color: #dd9518;
 }
-
 header nav a .lorem-5 {
   color: #00e5ff;
 }
-
 header .btn-info {
   margin-right: 50px;
 }
-
 header .btn-info button {
   border: none;
   color: white;
   background-color: transparent;
 }
-
 header .btn-info .active {
   border: 1px solid white;
   border-radius: 5px;
   padding: 5px 10px;
 }
-
 @media (max-width: 1365px) {
   header .btn-info {
     display: none;
   }
 }
-
 header .search-icon {
   font-size: 20px;
   color: white;
   display: none;
 }
-
 @media (max-width: 1365px) {
   header .search-icon {
     display: block;
@@ -130,38 +104,25 @@ header .search-icon {
 }
 
 .page-not-found {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
-  top: 100px;
+  margin-top: 100px;
 }
-
-.page-not-found .content-error h1 {
-  font-weight: 700;
-  font-size: 50px;
-  letter-spacing: 2px;
-  margin-left: -60px;
+.page-not-found .content-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
-
 @media (max-width: 972px) {
-  .page-not-found .content-error h1 {
-    font-size: 25px;
-    margin-left: 20px;
+  .page-not-found .content-error .dummy-error-text {
+    display: block;
+    width: 600px;
   }
 }
-
-.page-not-found .content-error p {
-  font-size: 20px;
-  margin-left: -300px;
-}
-
-@media (max-width: 972px) {
-  .page-not-found .content-error p {
-    width: 600px;
-    text-align: center;
-    padding-left: 305px;
-    font-size: 13px;
+@media (max-width: 669px) {
+  .page-not-found .content-error .dummy-error-text {
+    display: block;
+    width: 300px;
   }
 }
 
@@ -169,33 +130,29 @@ header .search-icon {
   margin-top: 250px;
   background-image: url(/Images/wallpaper404.png);
   height: 700px;
-  width: 100vw;
   overflow-x: scroll;
 }
-
 .card-brands h1 {
   text-align: center;
   font-size: 33px;
   font-size: 700;
   padding-top: 20px;
 }
-
 .card-brands h1 a {
   text-decoration: none;
   color: #286aa4;
 }
-
 @media (max-width: 972px) {
   .card-brands h1 {
     font-size: 20px;
   }
 }
-
 .card-brands .content-cards {
-  display: block;
-  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
 .card-brands .content-cards .card {
   display: inline-block;
   width: 200px;
@@ -204,99 +161,75 @@ header .search-icon {
   background-color: white;
   border-radius: 10px;
 }
-
 .card-brands .content-cards .card .nav-init {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0px 5px;
 }
-
 .card-brands .content-cards .card .nav-init p {
   font-weight: lighter;
   padding-right: 60px;
   font-size: 10px;
 }
-
 .card-brands .content-cards .card .bck-color-1 {
   padding: 10px 0px;
   background-color: #3b4f82;
 }
-
 .card-brands .content-cards .card .bck-color-1 img {
   height: 40px;
 }
-
 .card-brands .content-cards .card .bck-color-2 {
   padding: 10px 0px;
   background-color: #a26530;
 }
-
 .card-brands .content-cards .card .bck-color-2 img {
   height: 40px;
 }
-
 .card-brands .content-cards .card .bck-color-3 {
   padding: 10px 0px;
   background-color: #145732;
 }
-
 .card-brands .content-cards .card .bck-color-3 img {
   height: 40px;
 }
-
 .card-brands .content-cards .card .bck-color-4 {
   padding: 10px 0px;
   background-color: #c3cbc7;
 }
-
 .card-brands .content-cards .card .bck-color-4 img {
   height: 40px;
 }
-
 .card-brands .content-cards .card .bck-color-5 {
   padding: 10px 0px;
   background-color: #833883;
 }
-
 .card-brands .content-cards .card .bck-color-5 img {
   height: 40px;
 }
-
 .card-brands .content-cards .card .dummy-text h6 {
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 1px;
 }
-
 .card-brands .content-cards .card .dummy-text h4 {
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .card-brands .content-cards .card .dummy-text h5 {
   font-weight: 100;
   font-size: 16px;
 }
-
 .card-brands .content-cards .card .dummy-text h5 a {
   text-decoration: none;
   color: #286aa4;
   font-weight: bold;
 }
-
 .card-brands .content-cards .card .dummy-text p {
   font-weight: 100;
   font-size: 10px;
   margin-top: -20px;
 }
-
 .card-brands .content-cards .card button {
   text-transform: uppercase;
   color: white;
@@ -307,7 +240,6 @@ header .search-icon {
   font-size: 10px;
   margin-bottom: 10px;
 }
-
 .card-brands .all-brands {
   font-size: 33px;
   margin-top: 140px;
@@ -315,27 +247,22 @@ header .search-icon {
   text-transform: uppercase;
   color: white;
   border-radius: 20px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#1ae0ee), to(#0088ff));
   background-image: linear-gradient(to right, #1ae0ee, #0088ff);
   border-image-source: linear-gradient(to right, #1ae0ee, #0088ff);
   font-size: 15px;
   letter-spacing: 1px;
   padding: 5px 40px;
 }
-
 @media (max-width: 1365px) {
   .card-brands .all-brands {
     margin-left: 500px;
   }
 }
-
 @media (max-width: 1365px) {
   .card-brands .all-brands {
     margin-left: 150px;
   }
 }
-
 .card-brands .border-gradient {
   border-image-slice: 1;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
